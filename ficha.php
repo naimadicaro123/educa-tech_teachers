@@ -28,7 +28,7 @@
     <section class="cadastramento">
         <h1 class="big_letter">LOGIN</h1>
         <div class="valores">
-            <label for="user"><span>Usuário</span>
+            <label for="user"><span>Número de Matrícula</span>
                 <input type="text" name="cpf_aluno" required>
             </label>
             <label for="data"><span>Data de Nascimento</span>
