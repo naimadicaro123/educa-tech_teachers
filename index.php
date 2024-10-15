@@ -10,7 +10,8 @@
     <main class="main-content">
 
 
-
+    <button class="envio" type="button" onclick="location.href='login.php';">ENTRAR</button>
 </main>
+<script src="scripts/script.js"></script>
 </body>
 </html>
