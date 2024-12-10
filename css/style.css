@@ -98,6 +98,11 @@ span{
     border: 0px;
     margin-top: 50px;
 }
+.envio:hover{
+    background-color: var(--main-escuro);
+    color: white;
+    transition: 0.5s ease-in;
+}
 @media (min-width: 328px) and (max-width: 728px) {
     .valores {
         flex-direction: column;

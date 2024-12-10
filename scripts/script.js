@@ -1,11 +1,12 @@
-function formatDate(input) {
+function formatCPF(input) {
     // Remove caracteres não numéricos
     const value = input.value.replace(/\D/g, '');
-    // Adiciona a barra após o dia e o mês
-    if (value.length >= 2) {
-        input.value = value.replace(/(\d{2})(\d)/, '$1/$2');
-    }
-    if (value.length >= 4) {
-        input.value = value.replace(/(\d{2})(\d{2})(\d)/, '$1/$2/$3');
+
+    // Formata o CPF no padrão 111.111.111-11
+    if (value.length <= 11) {
+        // Aplica a formatação para o CPF no formato 111.111.111-11
+        input.value = value.replace(/(\d{3})(\d)/, '$1.$2');
+        input.value = input.value.replace(/(\d{3})(\d)/, '$1.$2');
+        input.value = input.value.replace(/(\d{3})(\d{2})$/, '$1-$2');
     }
 }
